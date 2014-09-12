@@ -1,11 +1,11 @@
-var i = 5;
+var tally = 0;
 
-var multiples = function() {
+for (i = 0; i < 1000; i++) {
   if (i % 3 === 0) {
-    return "Multiple of 3";
+    tally += i;
   } else if (i % 5 === 0) {
-    return "Multiple of 5";
+    tally += i;
   }
-};
+}
 
-console.log(multiples());
+console.log(tally);
