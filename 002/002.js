@@ -1,4 +1,4 @@
-// Create fibonacci array beginning with the first two elements
+// Create fibonacci array, beginning with the first two elements
 var fib = [1, 2];
 var evenSum = 0;
 
