@@ -1,10 +1,17 @@
 // Create fibonacci array beginning with the first two elements
-var fibonacci = [1, 2];
+var fib = [1, 2];
+var sum = 0;
 
 // Add new elements to fibonacci sequence
 // Ensure that the final fibonacci element does not exceed 4 million
-while (fibonacci.slice(-1)[0] < 4000000) {
-  fibonacci.push((fibonacci.slice(-1)[0]) + (fibonacci.slice(-2)[0]));
+for (i = 0; fib[fib.length - 1] < 4000000; i++) {
+  fib.push((fib[fib.length - 1]) + (fib[fib.length - 2]));
+
+
+  // Find the sum of the even valued fibonacci elements
+  if ((fib[fib.length - 1]) % 2 === 0) {
+    sum += fib[fib.length - 1];
+  }
 }
 
-console.log(fibonacci);
+console.log(fib);
