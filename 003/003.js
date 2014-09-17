@@ -1,16 +1,15 @@
-var factors = [];
-var i = 2;
+var i = 1;
 
 function largestPrime(n) {
   while (i < n) {
     if (n % i === 0) {
-      factors.push(i);
-
-      i++;
-    } else {
-      return factors;
+      n /= i;
     }
+
+    i++;
   }
+
+  console.log(n);
 }
 
-console.log(largestPrime(600851475143));
+largestPrime(600851475143);
